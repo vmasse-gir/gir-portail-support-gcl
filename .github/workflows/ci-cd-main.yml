@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  NETLIFY_SITE_ID: '1d7b620a-55cd-43e2-a355-5108c202cc02'
+  NETLIFY_SITE_ID: 'ec6c10ab-eb47-4a85-9191-7ee572f3da00'
   NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN_PORTAIL_SUPPORT }}
 
 jobs:
