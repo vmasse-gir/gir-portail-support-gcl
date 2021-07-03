@@ -1,0 +1,20 @@
+name: ci-cd-main
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  NETLIFY_SITE_ID: '1d7b620a-55cd-43e2-a355-5108c202cc02'
+  NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN_PORTAIL_SUPPORT }}
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: Deploy site
+      run: npx netlify-cli deploy --prod --dir .
+      if: success()
