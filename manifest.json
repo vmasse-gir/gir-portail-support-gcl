@@ -1,0 +1,16 @@
+{
+    "name": "Portail Support GCL",
+    "short_name": "Portail",
+    "start_url": ".",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#084695",
+    "theme_color": "#084695",
+    "icons": [
+        {
+            "src": "icon.png",
+            "type": "image/png",
+            "sizes": "264x265"
+        }
+    ]
+}
