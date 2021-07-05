@@ -25,5 +25,18 @@
   <div class="slides">
     <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSXVsUYg_GAIrUog4NvUkVoC61eM7rYZ6qNaj9wdCuAdYy-I8PjiDS_R3im36lhSyY9FwPb8m0fnrTU/embed?rm=minimal"></iframe>
   </div>
+  
+  <script>
+    window.addEventListener('load', e => {
+      new PWAConfApp();
+      registerSW(); 
+    });
+    
+    async function registerSW() { 
+      if ('serviceWorker' in navigator) { 
+        await navigator.serviceWorker.register('./sw.js'); 
+      }
+    }
+  </script>
 </body>
 </html>
