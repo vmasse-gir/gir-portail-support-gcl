@@ -1,4 +1,4 @@
-const cacheName = 'gir-portail-support-gcl-v3';
+const cacheName = 'gir-portail-support-gcl-v4';
 
 self.addEventListener('activate', evt => {
   evt.waitUntil(
